@@ -1,0 +1,6 @@
+<h1>Editing User</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @user if @role == 'admin' %>
+<%= link_to 'Back', @role == 'admin' ? users_path : user_path(@user) %>
